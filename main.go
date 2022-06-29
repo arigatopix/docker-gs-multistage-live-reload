@@ -20,7 +20,7 @@ func main() {
 	})
 
 	e.GET("/hello", func(c echo.Context) error {
-		return c.HTML(http.StatusOK, "use air live reload")
+		return c.HTML(http.StatusOK, "use air live reload2")
 	})
 
 	e.GET("/ping", func(c echo.Context) error {
