@@ -19,6 +19,10 @@ func main() {
 		return c.HTML(http.StatusOK, "Hello, Docker! <3")
 	})
 
+	e.GET("/hello", func(c echo.Context) error {
+		return c.HTML(http.StatusOK, "use air live reload")
+	})
+
 	e.GET("/ping", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
 	})
